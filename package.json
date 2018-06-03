@@ -1,0 +1,27 @@
+{
+  "name": "raspi-timeplaser",
+  "version": "0.0.1",
+  "description": "NodeJS app to take long-term time lapses with a raspberry pi camera and upload to s3",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonnyGomes/raspi-timeplaser.git"
+  },
+  "keywords": [
+    "iot",
+    "raspberrypi",
+    "timeplapse"
+  ],
+  "author": "Lonny Gomes <code@lonnygomes.com> (https://github.com/LonnyGomes)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LonnyGomes/raspi-timeplaser/issues"
+  },
+  "homepage": "https://github.com/LonnyGomes/raspi-timeplaser#readme",
+  "dependencies": {
+    "aws-iot-device-sdk": "^2.2.1"
+  }
+}
