@@ -1,7 +1,7 @@
 const State = require('./state');
 const state = new State();
 
-const bootstrap = (params) => {
+const bootstrap = (config) => {
 
     const task = async () => {
         const curIdx = await state.getCurIdx();
