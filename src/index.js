@@ -1,4 +1,5 @@
 const cron = require('node-cron');
+const log = require('./log');
 const config = require('../config');
 const task = require('./timelapseTask')(config);
 
@@ -6,9 +7,9 @@ const task = require('./timelapseTask')(config);
 cron.validate(config.cronSchedule);
 
 if (!cron.validate(config.cronSchedule)) {
-    console.error('Invalid cron schedule defined!');
+    log.error('Invalid cron schedule defined!');
     process.exit(-1);
 }
 
-console.log('starting time lapse ...');
+log.info('starting time lapse scheduler ...');
 cron.schedule(config.cronSchedule, task);
