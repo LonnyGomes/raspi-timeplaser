@@ -1,8 +1,12 @@
+const State = require('./state');
+const state = new State();
 
 const bootstrap = (params) => {
 
-    const task = () => {
-        console.log('running!');
+    const task = async () => {
+        const curIdx = await state.getCurIdx();
+        console.log(`creating time lapse image using index ${curIdx}`);
+        state.updateCurIdx();
     }
 
     return task;

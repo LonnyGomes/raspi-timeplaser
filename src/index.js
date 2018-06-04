@@ -3,7 +3,8 @@ const config = require('../config');
 const task = require('./timelapseTask')();
 
 // confirm cron job task is properly defined
-console.log(cron.validate(config.cronSchedule));
+cron.validate(config.cronSchedule);
+
 if (!cron.validate(config.cronSchedule)) {
     console.error('Invalid cron schedule defined!');
     process.exit(-1);
