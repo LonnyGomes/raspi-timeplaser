@@ -1,6 +1,6 @@
 const cron = require('node-cron');
 const config = require('../config');
-const task = require('./timelapseTask')();
+const task = require('./timelapseTask')(config);
 
 // confirm cron job task is properly defined
 cron.validate(config.cronSchedule);

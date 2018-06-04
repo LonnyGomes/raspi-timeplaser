@@ -1,7 +1,7 @@
 const State = require('./state');
 const state = new State();
 
-const bootstrap = (params) => {
+const bootstrap = (config) => {
 
     const createCam = (idx) => {
         const PiCamera = require('pi-camera');
