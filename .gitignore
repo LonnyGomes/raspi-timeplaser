@@ -60,4 +60,8 @@ typings/
 # next.js build output
 .next
 
+# don't commit certs
 certs
+
+# state file should not be committed
+state.json
