@@ -60,6 +60,10 @@ const bootstrap = (config) => {
             // remove image now that it is in s3
             await fs.remove(outputFile);
 
+            // clear out allocations
+            photoData = null;
+            cam = null;
+
             // update index upon successful capture
             state.updateCurIdx();
         } catch (err) {
