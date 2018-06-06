@@ -1,5 +1,5 @@
 module.exports = {
-    cronSchedule: '*/10 * * * * *',
+    cronSchedule: '*/10 * * * *',
     bucketName: 'lonnygomes-timelapse',
     bucketPrefix: 'tl-plant',
     credentials: {
