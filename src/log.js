@@ -2,7 +2,7 @@ const chalk = require('chalk');
 require('./monkey-patches');
 
 const INFO_BUL = `${chalk.green('[*]')}`;
-const ERROR_BUL = `${chalk.red('[*]')}`;
+const ERROR_BUL = `${chalk.red('[✘]')}`;
 const ARROW = `${chalk.magenta('↳')}`;
 
 const genTimestamp = () => {
@@ -31,7 +31,7 @@ const info = (str) => {
 
 const error = (str) => {
     const timestamp = genTimestamp();
-    console.log(`${timestamp} ${ERROR_BUL} ${chalk.gray(str)}`);
+    console.log(`${timestamp} ${ERROR_BUL} ${ARROW}  ${chalk.gray(str)}`);
 }
 
 module.exports = {
