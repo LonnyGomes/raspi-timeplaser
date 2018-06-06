@@ -33,7 +33,7 @@ const bootstrap = (config) => {
 
     const task = async () => {
         const curIdx = await state.getCurIdx();
-        log.info(`creating time lapse image using index ${curIdx}`);
+        log.header(`creating time lapse image using index ${curIdx}`);
 
         try {
             // create instance of camera object

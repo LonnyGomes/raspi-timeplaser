@@ -4,5 +4,5 @@ const config = require('../config');
 const task = require('./timelapseTask')(config);
 
 
-log.info('starting time lapse scheduler ...');
+log.header('starting time lapse scheduler ...');
 schedule.scheduleJob(config.cronSchedule, task);
