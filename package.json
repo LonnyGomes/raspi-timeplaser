@@ -4,7 +4,7 @@
   "description": "NodeJS app to take long-term time lapses with a raspberry pi camera and upload to s3",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node  --max-old-space-size=128 src/index.js",
     "test": "npm test"
   },
   "repository": {
